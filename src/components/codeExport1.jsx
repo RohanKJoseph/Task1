@@ -47,7 +47,7 @@ const CodeExport1 = ({ onClose }) => {
         )}
       </div >
 
-      <button className="model sm-gray-button" style={{ marginTop: '20px' }}>
+      <button className="export-bttn" >
         Download {exportType === 'next' ? 'Next JS Project' : 'HTML & CSS'}
       </button>
     </div>
