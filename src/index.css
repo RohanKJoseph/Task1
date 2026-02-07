@@ -8,6 +8,14 @@
   --tab-active: #2a2a2a;       /* Active tab background */
 }
 
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+ 
+    color: var(--text-main);
+}
+
 .sm-gray-button {
     background: linear-gradient(0deg, #444444 100%, #333333 0%); 
     color: white;
@@ -66,10 +74,10 @@
   color: white;
   background: #302f2f; 
   padding: 16px;
-  gap: 16px;
+  gap: 6px;
   border-radius: 8px;
   width: 460px;
-  height: 367px;
+  min-height: 367px;
   min-width: 460px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
   top: 171px;
@@ -78,23 +86,28 @@
   flex-direction: column;
 }
 
-/* A simple close button in the corner */
-.close-btn {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  background: none;
-  border: none;
-  font-size: 20px;
-  cursor: pointer;
+.close-x {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: transparent;
+    border: 1px solid transparent;
+    color: var(--text-dim);
+    font-size: 20px;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;   
+    border-radius: 6px;
+    padding: 6px;
+    gap: 10px;
+    color: #CBCBCB;
 }
-
 
 .inner-card {
   background-color: var(--bg-inner);
   border-radius: 12px;
-  padding: 20px;
-  margin: 20px 0;
+  padding: 10px;
+  margin: 10px 0;
 }
 
 
@@ -111,7 +124,7 @@
 
 .toggle-btn {
   flex: 1;
-  padding: 10px;
+  padding: 8px;
   border: none;
   border-radius: 6px;
   color: var(--text-dim);
@@ -134,4 +147,53 @@
     border-radius:4px ;
     padding: 8px 16px 8px 16px;
     gap: 10px;
+}
+
+.html-l1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ziped {
+    background-color: #444444;
+    padding: 2px 8px;
+    border-radius: 10px;
+}
+
+.html-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+input[type="checkbox"] {
+     width: 20px;
+     height: 20px;
+     
+}
+
+label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--text-dim);
+}
+
+p {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    font: Kumbh Sans;
+    
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+    size: 18px;
+    height: 22px;
+    gap:6px;
+    padding: 4px 0;
 }

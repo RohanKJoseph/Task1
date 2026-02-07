@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import Next from './next';
+import Html from './html';
 
 const CodeExport1 = ({ onClose }) => {
  
@@ -8,7 +10,7 @@ const CodeExport1 = ({ onClose }) => {
     <div className="modal-content">
       <div className="modal-header" style={{ display: 'flex', justifyContent: 'space-between' }}>
         <div>
-          <h2 style={{ margin: 0 }}>Code Export</h2>
+          <h2>Code Export</h2>
           <p style={{ color: 'var(--text-dim)', fontSize: '14px' }}>Manage how you download your website's code.</p>
         </div>
         <button onClick={onClose} className="close-x" style={{
@@ -35,15 +37,12 @@ const CodeExport1 = ({ onClose }) => {
         {exportType === 'next' ? (
           <div className="next-options">
             
-             <label style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '12px' }}>
-                <input type="checkbox" defaultChecked style={{ accentColor: 'var(--accent-purple)' }} />
-                <span>Use `app` directory (NextJS v13+)</span>
-             </label>
+             <Next />
              
           </div>
         ) : (
           <div className="html-options">
-            <p >HTML/CSS Export settings would go here...</p>
+            <Html />
           </div>
         )}
       </div >
