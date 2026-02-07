@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Next from './next';
 import Html from './html';
+import { AiOutlineClose } from "react-icons/ai";
 
 const CodeExport1 = ({ onClose }) => {
  
@@ -9,12 +10,12 @@ const CodeExport1 = ({ onClose }) => {
   return (
     <div className="modal-content">
       <div className="modal-header" style={{ display: 'flex', justifyContent: 'space-between' }}>
-        <div>
-          <h2>Code Export</h2>
-          <p style={{ color: 'var(--text-dim)', fontSize: '14px' }}>Manage how you download your website's code.</p>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
+          <p style={{ fontSize: '18px', fontWeight: '500', margin: 0 ,color:'#f7f7f7'}}>Code Export</p>
+          <p style={{ fontSize: '14px', margin: 5 }}>Manage how you download your website's code.</p>
         </div>
         <button onClick={onClose} className="close-x" style={{
-             background: 'none', border: 'none', color: '#fff', fontSize: '24px', cursor: 'pointer' }}>&times;</button>
+              border: 'none', color: '#807e7e', fontSize: '24px', cursor: 'pointer', width: '22px', height: '22px' ,marginRight: '12px'}}><AiOutlineClose /></button>
       </div>
 
       <div className="inner-card">
